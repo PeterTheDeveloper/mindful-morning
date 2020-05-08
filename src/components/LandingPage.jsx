@@ -3,9 +3,12 @@ import React from 'react'
 function LandingPage(props) {
     return (
         <div>
-            <h2>Good Morning, welcome to the Mindful morning application</h2>
+            <div className='greeting'>
+                <h2>Good Morning!</h2>
+                <p>Welcome back for another Mindful Morning</p>
+            </div>
             
-            <button onClick={props.nextPage}>Next</button>
+            <button className='landingButton' onClick={props.nextPage}>Next</button>
         </div>
     )
 }
